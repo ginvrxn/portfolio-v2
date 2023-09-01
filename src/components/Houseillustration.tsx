@@ -58,8 +58,22 @@ export default function HouseIllustration() {
             <path d="M283.15 337v252.79H175.5V337h107.65m29-29H158.73a12.24 12.24 0 00-12.23 12.23v298.56h165.65V308z"></path>
             {/* window */}
             <path
-            className="animate-pulse"
-                fill="#ff000"
+                fill="#999FB6"
+                stroke="none"
+                strokeMiterlimit="10"
+                strokeWidth="15"
+                d="M496 313.5h47.5V366H491v-47.48a5 5 0 015-5.02zM543.5 313.5H591a5 5 0 015 5V366h-52.5zM491 366h52.5v52.5H496a5 5 0 01-5-5zM543.5 366H596v47.48a5 5 0 01-5 5h-47.5z"
+            ></path>
+            <path
+            className="animate-flicker"
+                fill="#999FB6"
+                stroke="none"
+                strokeMiterlimit="10"
+                strokeWidth="15"
+                d="M496 313.5h47.5V366H491v-47.48a5 5 0 015-5.02zM543.5 313.5H591a5 5 0 015 5V366h-52.5zM491 366h52.5v52.5H496a5 5 0 01-5-5zM543.5 366H596v47.48a5 5 0 01-5 5h-47.5z"
+            ></path>
+            <path
+                fill="none"
                 stroke="#000"
                 strokeMiterlimit="10"
                 strokeWidth="15"
