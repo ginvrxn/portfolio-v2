@@ -13,7 +13,7 @@ export default function Testing() {
     animation: "none",
   });
 
-  function useParallax(value: MotionValue<number>, distance: number) {
+  function useParallax(value, distance: number) {
     return useTransform(value, [0, 1], [-distance, distance]);
   }
 
