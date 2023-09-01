@@ -23,7 +23,7 @@ export default function House() {
 
     const scale = useTransform(
         scrollYProgress,
-        [0.1, 0.75, 1],
+        [0.05, 0.75, 1],
         [1, 10, 25]
     );
     const width = useTransform(
@@ -48,11 +48,10 @@ export default function House() {
             <div className="h-[500vh] relative">
                 <motion.div className="sticky top-0 overflow-hidden min-h-screen max-h-screen flex flex-col justify-start pt-10">
                     <div className="w-full h-full text-center">
-                        <h1 className="text-6xl sm:text-[8rem] font-bold flex flex-col leading-none">
-                            <motion.span style={{ translateY: firstValue, opacity: firstText }} className={cn("text-[3rem] sm:text-[10rem]", "text-white")}>WELCOME</motion.span>
-                            <motion.span style={{ translateY: firstValue, opacity: firstText }} className={cn("text-white")}>IN MY HOUSE</motion.span>
+                        <h1 className="text-6xl sm:text-[8rem] font-bold flex flex-col leading-none ">
+                            <motion.span style={{ "--index": 1, translateY: firstValue, opacity: firstText }}  className={cn("animate-in text-[3rem] sm:text-[10rem]", "text-white")}>WELCOME</motion.span>
+                            <motion.span style={{ "--index": 5, translateY: firstValue, opacity: firstText }} className={cn("animate-in text-[3rem] sm:text-[7rem] text-white")}>IN MY WORLD!</motion.span>
                         </h1>
-
                     </div>
                     <div className="fixed bottom-0 w-full ">
                         <motion.div style={{ scale, originY: "60%" }} className="mx-auto">

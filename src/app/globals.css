@@ -2,71 +2,95 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background: #999FB6
 }
 
+.animate-in {
+  animation-delay: calc(var(--index) * 130ms);
+}
+
+@keyframes in {
+  0% {
+    transform: translateY(300px);
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
 @keyframes flicker {
+  0% {
+    opacity: 1;
+  }
+
+  5% {
+    opacity: 1;
+  }
+
+  10% {
+    opacity: 1;
+  }
+
+  15% {
+    opacity: 1;
+  }
+
+  25% {
+    opacity: 0.5;
+  }
+
+  30% {
+    opacity: 1;
+  }
+
+  35% {
+    opacity: 0.1;
+  }
+
+  40% {
+    opacity: 0.25;
+  }
+
+  45% {
+    opacity: 0.5;
+  }
+
+  60% {
+    opacity: 1;
+  }
+
+  70% {
+    opacity: 0.85;
+  }
+
+  80% {
+    opacity: 0.4;
+  }
+
+  90% {
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes float {
 	0% {
-		opacity: 1;
+		transform: translatey(0px);
 	}
-	5% {
-		opacity: 1;
-	}
-	10% {
-		opacity: 1;
-	}
-	15% {
-		opacity: 1;
-	}
-	25% {
-		opacity: 0.5;
-	}
-	30% {
-		opacity: 1;
-	}
-	35% {
-		opacity: 0.1;
-	}
-	40% {
-		opacity: 0.25;
-	}
-	45% {
-		opacity: 0.5;
-	}
-	60% {
-		opacity: 1;
-	}
-	70% {
-		opacity: 0.85;
-	}
-	80% {
-		opacity: 0.4;
-	}
-	90% {
-		opacity: 0.5;
+	50% {
+		transform: translatey(-20px);
 	}
 	100% {
-		opacity: 1;
+		transform: translatey(0px);
 	}
 }

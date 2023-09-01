@@ -111,7 +111,7 @@ export default function Testing() {
               <motion.div className="sticky top-0 overflow-hidden min-h-screen max-h-screen flex flex-col justify-center">
                 <div className="w-full h-full">
                   <h1 className="text-[6rem] sm:text-[8rem] font-bold flex flex-col leading-none">
-                    <motion.span style={text} className={cn("text-[10rem]", "text-white")}>HELLO</motion.span>
+                    <motion.span style={text}  className={cn("text-[10rem]", "text-white")}>HELLO</motion.span>
                     <motion.span style={text} className={cn("text-white")}>IT'S ME</motion.span>
                     <motion.span style={text} className={cn("text-white")}>GIULIO</motion.span>
                   </h1>

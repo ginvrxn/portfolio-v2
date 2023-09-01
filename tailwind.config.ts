@@ -17,6 +17,8 @@ const config: Config = {
       },
       animation: {
         'flicker': 'flicker 3s linear reverse infinite',
+        in: "in 1s both",
+        float: "float 3s ease-in-out infinite",
       }
     },
   },
