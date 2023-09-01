@@ -58,7 +58,8 @@ export default function HouseIllustration() {
             <path d="M283.15 337v252.79H175.5V337h107.65m29-29H158.73a12.24 12.24 0 00-12.23 12.23v298.56h165.65V308z"></path>
             {/* window */}
             <path
-                fill="none"
+            className="animate-pulse"
+                fill="#ff000"
                 stroke="#000"
                 strokeMiterlimit="10"
                 strokeWidth="15"

@@ -13,7 +13,7 @@ export default function Testing() {
     animation: "none",
   });
 
-  function useParallax(value, distance: number) {
+  function useParallax(value:any, distance: number) {
     return useTransform(value, [0, 1], [-distance, distance]);
   }
 
@@ -50,7 +50,7 @@ export default function Testing() {
     return () => window.removeEventListener("scroll", onScroll);
   }, [scrollDir]);
 
-  function Text({ children, className, motion }) {
+  function Text({ children, className, motion }:any) {
     const ref = useRef(null)
     const isInView = useInView(ref)
 

@@ -1,6 +1,6 @@
 import { AnimatePresence, delay, motion, useAnimationControls } from 'framer-motion';
 
-export default function FaceIllustration({ face }) {
+export default function FaceIllustration({ face } :any) {
     //M 175 120 Q 130 120 89 120 M 175 120 Q 130 90 89 120 M 363 120 Q 318 120 277 120 M 363 120 Q 318 90 277 120 
     const expression = {
         suspicious: {
