@@ -49,16 +49,16 @@ export default function House() {
                 <motion.div className="sticky top-0 overflow-hidden min-h-screen max-h-screen flex flex-col justify-start pt-10">
                     <div className="w-full h-full text-center">
                         <h1 className="text-6xl sm:text-[8rem] font-bold flex flex-col leading-none ">
-                            <motion.span style={{ "--index": 1, translateY: firstValue, opacity: firstText }}  className={cn("animate-in text-[3rem] sm:text-[10rem]", "text-white")}>WELCOME</motion.span>
+                            <motion.span style={{ "--index": 1, translateY: firstValue, opacity: firstText }} className={cn("animate-in text-[3rem] sm:text-[10rem]", "text-white")}>WELCOME</motion.span>
                             <motion.span style={{ "--index": 5, translateY: firstValue, opacity: firstText }} className={cn("animate-in text-[3rem] sm:text-[7rem] text-white")}>IN MY WORLD!</motion.span>
                         </h1>
                     </div>
                     <div className="fixed bottom-0 w-full ">
-                        <motion.div style={{ scale, originY: "60%" }} className="mx-auto">
-                             <div className="max-w-xl mx-auto px-4 sm:px-0">
+                        <motion.div style={{ scale }} className="mx-auto">
+                            <div className="max-w-xs mx-auto px-4 sm:px-0">
                                 <HouseIllustration />
                             </div>
-                            <div className="h-20 w-full bg-black"/>
+                            <div className="h-20 w-full bg-black rounded-t-3xl" />
                         </motion.div>
                     </div>
                 </motion.div>

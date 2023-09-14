@@ -1,6 +1,6 @@
 export default function HouseIllustration() {
     return (
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 734 638.79">
+        <svg xmlns="http://www.w3.org/2000/svg" className="w-full h-full" viewBox="0 0 734 638.79">
             <path fill="#fff" d="M79.14 265.24H637.86V624.29H79.14z"></path>
             <path d="M623.36 279.75v330H93.64v-330h529.72m20.5-29H73.14a8.49 8.49 0 00-8.5 8.5v371a8.49 8.49 0 008.5 8.5h570.72a8.49 8.49 0 008.5-8.5v-371a8.49 8.49 0 00-8.5-8.5z"></path>
             <path

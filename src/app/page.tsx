@@ -4,7 +4,7 @@ import { useEffect, useRef, useState } from "react"
 import House from "@/sections/house"
 import cn from "classnames"
 import FaceIllustration from "@/components/FaceIllustration"
-export default function Testing() {
+export default function Home() {
   const { scrollY } = useScroll()
   const [face, setFaceStatus] = useState<any>({
     status: "happy",
