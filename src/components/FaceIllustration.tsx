@@ -1,3 +1,4 @@
+"use client"
 import { AnimatePresence, delay, motion, useAnimationControls } from 'framer-motion';
 
 export default function FaceIllustration({ face }: any) {

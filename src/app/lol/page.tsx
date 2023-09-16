@@ -46,8 +46,8 @@ export default function Pagina() {
     const toggleOpen = () => setOpen((active) => !active)
 
     const variants = {
-        open: {  y: 0, transition: { type: "linear" } },
-        closed: { y: "-100%", transition: { type: "linear" }},
+        open: {  y: 0, transition: { type: "tween" } },
+        closed: { y: "-100%", transition: { type: "tween", duration: 0.5 }},
     }
 
     return (
