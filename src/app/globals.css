@@ -13,9 +13,17 @@ body {
   position: relative;
 }
 
+h1, h2, h3 {
+  font-family: var(--font-prompt);
+}
+ 
+p, a {
+  font-family: var(--font-ubuntu);
+}
 body {
   color: rgb(var(--foreground-rgb));
   background-color: #f5f5f5;
+  font-family: var(--font-ubuntu);
 }
 .animate-in {
   animation-delay: calc(var(--index) * 130ms);

@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-
+import { motion } from "framer-motion";
 const Clock = () => {
   let date = new Date();
   const [time, setTime] = useState({
